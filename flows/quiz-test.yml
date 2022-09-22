@@ -65,24 +65,6 @@ groups:
     # Pages can be given in-line (like this one) or brought in by including
     # them from other files, as below.
     -
-        type: TextQuestion
-        id: half
-        value: 5
-        prompt: |
-
-          # 次の計算をせよ。
-
-          5(3a+b)-8a
-
-        answers:
-
-          - type: float
-            value: 7a+5b
-            rtol: 1e-4
-          - <plain>7a+5b
-          - <plain>7a + 5b
-
-    -
         type: ChoiceQuestion
         id: krylov
         value: 2
