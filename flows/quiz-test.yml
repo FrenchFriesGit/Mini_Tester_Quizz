@@ -66,8 +66,8 @@ groups:
     # them from other files, as below.
     -
         type: ChoiceQuestion
-        id: krylov
-        value: 2
+        id: half
+        value: 10
         prompt: |
 
             # 次の方程式を解け。
@@ -82,11 +82,9 @@ groups:
         - x=-5
 
     -
-        type: MultipleChoiceQuestion
-        id: ice_cream_toppings
-        credit_mode: exact
-        value: 1
-        shuffle: False
+        type: ChoiceQuestion
+        id: krylov
+        value: 10
         prompt: |
 
             # 方程式をたてて求めよ。
@@ -100,6 +98,137 @@ groups:
           - 男子4人,女子10人
           - 男子14人,女子20人
           - 男子7人,女子13人
+
+    -
+        type: ChoiceQuestion
+        id: ice_cream_toppings
+        value: 10
+        prompt: |
+
+            # ()に入る文字を答えて次の慣用句を完成させなさい。
+
+            木で()をくくる
+
+        choices:
+
+          - 顔
+          - 足
+          - 肩
+          - 目
+          - ~CORRECT~ 鼻
+
+    -
+        type: ChoiceQuestion
+        id: matrix_props
+        value: 10
+        prompt: |
+
+            # ()に入る文字を答えて次の慣用句を完成させなさい。
+
+            ()に泥をぬる
+
+        choices:
+
+          - ~CORRECT~ 顔
+          - 足
+          - 肩
+          - 目
+          - 鼻
+
+    -
+        type: ChoiceQuestion
+        id: inlinemulti
+        value: 10
+        prompt: |
+
+            # ()に is, am, are のうち適切なものを入れなさい。
+
+            I () Kenji.
+
+        choices:
+
+          - is
+          - ~CORRECT~ am
+          - are
+          
+    -
+        type: ChoiceQuestion
+        id: fear
+        value: 10
+        prompt: |
+
+            # ()に is, am, are のうち適切なものを入れなさい。
+
+            Ms. Green () my teacher.
+
+        choices:
+
+          - ~CORRECT~ is
+          - am
+          - are
+    -
+        type: ChoiceQuestion
+        id: age_group
+        value: 10
+        prompt: |
+
+            # 次の問いに答えよ。
+
+            花を咲かせる植物を何というか。
+
+        choices:
+
+          - ~CORRECT~ 種子植物
+          - 大葉シダ植物
+          - ヒカゲノカズラ植物
+
+    -
+        type: ChoiceQuestion
+        id: quiz_tail
+        value: 10
+        prompt: |
+
+            # 次の問いに答えよ。
+
+            みずから光を出す電灯や太陽のことを何と言うか。
+
+        choices:
+
+          - 反射
+          - ~CORRECT~ 光源
+          - 乱反射
+
+    -
+        type: ChoiceQuestion
+        id: eigvec
+        value: 10
+        prompt: |
+
+            # 次の問いに答えよ。
+
+            たくさんの人、物、お金、情報が国境を超えて移動し世界が一体化することを何というか。
+
+        choices:
+
+          - 情報化
+          - 多文化社会
+          - ~CORRECT~ グローバル化
+
+    -
+        type: ChoiceQuestion
+        id: neumann
+        value: 10
+        prompt: |
+
+            # 次の問いに答えよ。
+
+            それぞれの国や地域が有利な条件で生産できるものを貿易によって交換しあうことを何というか。
+
+        choices:
+
+          - ~CORRECT~ 国際分業
+          - メディア
+          - 持続可能な社会
 
 completion_text: |
 
