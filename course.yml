@@ -1,7 +1,7 @@
 chunks:
 
 -
-    title: "Welcome to the sample course"
+    title: "サンプル"
     id: welcome
     rules:
     -
@@ -14,11 +14,11 @@ chunks:
 
     content: |
 
-        # このページでは、中学レベルの数学を学びます。
+        # このページでは、中学レベルのクイズを解けます。
 
-        以下のページから学習の為にクイズを受けれます。
+        以下のページから学習の為にクイズを解けます。
 
-        [クイズを受ける](flow:quiz-test)
+        [クイズを解く](flow:quiz-test)
 
         
 

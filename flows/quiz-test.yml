@@ -7,7 +7,7 @@
 # separate files. This is optional, but conceivably useful.
 {% from "yaml-macros.yml" import indented_include %}
 
-title: "中学数学クイズ"
+title: "中学総合クイズ"
 
 # The "|" character introduces a 'block literal', which means all text indented below
 # it is taken literally. The description property holds text marked up with 'Markdown'.
@@ -16,7 +16,7 @@ title: "中学数学クイズ"
 # So the '#' character below introduces a first-level headline (not a comment).
 description: |
 
-    # 中学数学クイズ
+    # 中学総合クイズ
 
 rules:
     start:
@@ -33,7 +33,7 @@ rules:
 
     access:
     -
-        message: "中学数学クイズ へ ようこそ"
+        message: "中学総合クイズ へ ようこそ"
         permissions: [view, submit_answer, end_session, see_correctness, see_answer_after_submission]
 
     grade_identifier: la_quiz
@@ -53,7 +53,7 @@ groups:
         id: welcome
         content: |
 
-            # 中学数学クイズ
+            # 中学総合クイズ
 
             次のページからテストが始まります。
 
